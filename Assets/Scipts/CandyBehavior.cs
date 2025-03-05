@@ -22,21 +22,4 @@ public class CandyBehavior : MonoBehaviour
     {
         
     }
-
-    public void initialPosition()
-    {
-        body = GetComponent<Rigidbody2D>();
-        //body.position;
-    }
-
-    public void spawnCandy()
-    {
-        int numVariants = candyVariants.Length;
-        if (numVariants > 0)
-        {
-            int selection = Random.Range(0, numVariants);
-            newObject = Instantiate(candyVariants[selection], new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
-        }
-        startTime = Time.time;
-    }
 }
