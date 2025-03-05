@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class SpawnBehavior : MonoBehaviour
 {
@@ -9,10 +10,11 @@ public class SpawnBehavior : MonoBehaviour
     public float timeSinceLastSpawn;
     Rigidbody2D body;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        cooldown = 0;
     }
 
     // Update is called once per frame
@@ -37,4 +39,15 @@ public class SpawnBehavior : MonoBehaviour
             newObject = Instantiate(candyVariants[selection], spawnPoint.transform.position, Quaternion.identity);
         }
     }
+
+    public void deSpawn()
+    {
+        GameObject[] candy = GameObject.FindGameObjectsWithTag("Candy");
+
+        for (int i = 0; i < candy.Length; i++)
+        {
+            Destroy(candy[i]);
+        }
+    }
 }
+

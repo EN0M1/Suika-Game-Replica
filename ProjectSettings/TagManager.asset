@@ -8,6 +8,9 @@ TagManager:
   - Wall
   - Claw
   - SpawnPoint
+  - Candy1
+  - Candy2
+  - Candy3
   layers:
   - Default
   - TransparentFX

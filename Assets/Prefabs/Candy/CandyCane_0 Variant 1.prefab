@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1002987476504815212, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
+      propertyPath: candy2Prefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3603834765665171592, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -15,6 +19,10 @@ PrefabInstance:
     - target: {fileID: 7445563750324540387, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
       propertyPath: m_Name
       value: CandyCane_0 Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445563750324540387, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
+      propertyPath: m_TagString
+      value: Candy
       objectReference: {fileID: 0}
     - target: {fileID: 7625924446306315421, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,7 +64,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5352283557552660789, guid: 5bd1ea9027cea440fa4dd1d541c1cab2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
